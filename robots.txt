@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rocket6996.github.io/astro-razbot-site/sitemap.xml
