@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Мифы об астрологии: что правда, а что нет</title>
+<meta name="description" content="Ретроградный Меркурий, полнолуние, «знаки сдвинулись» и ещё девять утверждений, которые повторяют чаще всего. С честными вердиктами — включая те, где наука не на стороне астрологии.">
+<link rel="canonical" href="https://rocket6996.github.io/mify-ob-astrologii.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Мифы об астрологии: что правда, а что нет">
+<meta property="og:description" content="Ретроградный Меркурий, полнолуние, «знаки сдвинулись» и ещё девять утверждений, которые повторяют чаще всего. С честными вердиктами — включая те, где наука не на стороне астрологии.">
+<meta property="og:url" content="https://rocket6996.github.io/mify-ob-astrologii.html">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://rocket6996.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rocket6996.github.io/og.jpg">
+
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "Астро Разбот — натальная карта и прогноз на сегодня", "url": "https://rocket6996.github.io", "description": "Разбор натальной карты в Telegram: прогноз на день, совместимость с партнёром, транзиты. По дате, времени и месту рождения.", "inLanguage": "ru-RU"}</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#07060f;--bg2:#0d0b1a;--fg:#e9e7f2;--dim:#9a97ad;--line:#211d33;--accent:#b9a6ff}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ -webkit-font-smoothing:antialiased}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:760px;margin:0 auto;padding:0 20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(7,6,15,.92);
+ backdrop-filter:blur(8px);z-index:10}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:700;letter-spacing:.02em;color:var(--fg)}
+.logo span{color:var(--accent)}
+nav a{margin-left:18px;font-size:15px;color:var(--dim)}
+nav a:hover{color:var(--fg);text-decoration:none}
+.hero{padding:70px 0 54px;text-align:center;
+ background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(150,120,255,.18),transparent 70%)}
+h1{font-size:clamp(28px,5vw,44px);line-height:1.18;letter-spacing:-.02em;margin-bottom:18px}
+.lead{color:var(--dim);font-size:19px;max-width:560px;margin:0 auto 30px}
+.btn{display:inline-block;background:var(--accent);color:#120d22;font-weight:700;
+ padding:14px 30px;border-radius:999px;font-size:17px}
+.btn:hover{text-decoration:none;opacity:.9}
+.btn.ghost{background:transparent;color:var(--fg);border:1px solid var(--line)}
+.note{color:var(--dim);font-size:14px;margin-top:12px}
+/* Вердикт мифа: по нему страницу сканируют глазами, поэтому он отбит
+   полосой слева, а не растворён в тексте абзаца. */
+.verdict{border-left:2px solid var(--accent);padding-left:14px}
+section{padding:46px 0;border-top:1px solid var(--line)}
+h2{font-size:26px;margin-bottom:20px;letter-spacing:-.01em}
+h3{font-size:19px;margin:26px 0 8px}
+p{margin-bottom:14px}
+p+h3{margin-top:30px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(164px,1fr));gap:12px}
+.card{display:block;border:1px solid var(--line);border-radius:14px;padding:16px;background:var(--bg2);
+ transition:border-color .15s,transform .15s}
+.card:hover{text-decoration:none;border-color:var(--c,var(--accent));transform:translateY(-2px)}
+.card .g{font-size:26px;font-variant-emoji:text;color:var(--c,var(--accent));line-height:1}
+.card .n{font-weight:600;margin-top:8px;color:var(--fg)}
+.card .d{color:var(--dim);font-size:13px;margin-top:2px}
+.meta{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 26px}
+.tag{border:1px solid var(--line);border-radius:999px;padding:5px 13px;font-size:14px;color:var(--dim)}
+.signhead{text-align:center;padding:48px 0 10px}
+.signhead .g{font-size:74px;font-variant-emoji:text;line-height:1;color:var(--c)}
+.signhead h1{margin-top:12px}
+.cta{border:1px solid var(--line);border-radius:18px;padding:30px;text-align:center;background:var(--bg2);margin:12px 0}
+.cta h2{margin-bottom:10px}
+.faq{border-top:1px solid var(--line);padding-top:18px;margin-top:18px}
+.faq:first-of-type{border:0;padding-top:0;margin-top:0}
+footer{border-top:1px solid var(--line);padding:34px 0 50px;color:var(--dim);font-size:14px}
+footer a{color:var(--dim)}
+ul{margin:0 0 14px 20px}
+li{margin-bottom:6px}
+@media(max-width:560px){.wrap{padding:0 16px}.hero{padding:48px 0 38px}nav a{margin-left:12px;font-size:14px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="index.html">астро<span>разбот</span></a>
+  <nav>
+    <a href="index.html#znaki">Знаки</a>
+    <a href="index.html#stati">Статьи</a>
+    <a href="https://t.me/astro_razbot">Бот</a>
+  </nav>
+</div></header>
+
+
+<div class="hero" style="padding-bottom:30px"><div class="wrap">
+  <h1>Мифы об астрологии: что правда, а что нет</h1>
+  <p class="lead">Ретроградный Меркурий, полнолуние, «знаки сдвинулись» и ещё девять утверждений, которые повторяют чаще всего. С честными вердиктами — включая те, где наука не на стороне астрологии.</p>
+</div></div>
+<section style="border:0;padding-top:0"><div class="wrap"><h2>В ретроградный Меркурий нельзя подписывать договоры</h2><p class="verdict"><b>Миф.</b> Меркурий бывает ретроградным примерно четверть года. Если отменять на это время сделки, переезды и важные разговоры, потерять можно куда больше, чем от любой путаницы с бумагами. Разумная версия совета короче: перечитай договор до подписи. Это полезно в любой день года.</p><h2>Знаки зодиака сдвинулись, и я на самом деле другого знака</h2><p class="verdict"><b>Отчасти правда.</b> Созвездия действительно сместились относительно дат: из-за прецессии земная ось медленно описывает круг. Но западная астрология работает не с созвездиями, а с тропическим зодиаком — он отсчитывается от точки весеннего равноденствия, то есть от времён года. Так что дата твоего знака не «устарела»: она никогда и не была привязана к картинке на небе.</p><h2>В полнолуние люди ведут себя безумнее обычного</h2><p class="verdict"><b>Миф.</b> Связь полнолуния с обращениями в скорую, преступностью и родами искали много раз и большими выборками — устойчивой корреляции не нашли. Работает эффект подтверждения: странную ночь в полнолуние запоминаешь, странную ночь в третью четверть — нет. Своё состояние в полнолуние отслеживать можно, но как привычку, а не как диагноз.</p><h2>Астрология предсказывает будущее</h2><p class="verdict"><b>Миф.</b> Карта показывает не события, а склонности: как человек реагирует, где у него тонко, что даётся легко. Транзиты показывают периоды, когда определённые темы обостряются. «В четверг тебе позвонят с работы» — не астрология, а гадание. «Ближайший месяц будет тянуть переиграть условия — подготовь аргументы» — вот это честный формат.</p><h2>Скорпионы мстительные, а Близнецы двуличные</h2><p class="verdict"><b>Миф.</b> Знак Солнца — одна точка из десятка. Соседний по описанию Скорпион с Луной в Рыбах и Скорпион с Луной в Козероге ведут себя по-разному настолько, что общего у них почти нет. Ярлыки по знаку живут не потому, что работают, а потому, что их удобно пересказывать.</p><h2>Без точного времени рождения разбор бессмысленен</h2><p class="verdict"><b>Миф.</b> Без времени неизвестен Асцендент и дома — то есть сферы жизни: где деньги, где отношения, где работа. Но положения планет по знакам, аспекты между ними и транзиты считаются и так. Это заметная часть карты: про характер, про сильные и слабые места, про периоды. Меньше, чем с временем, но далеко не ноль.</p><h2>Квадрат в карте — это плохой аспект</h2><p class="verdict"><b>Миф.</b> Квадрат — это две потребности, которые тянут в разные стороны и не дают друг друга игнорировать. Неудобно — да. Но именно из такого трения обычно и растёт навык: человек вынужден искать решение, а не плыть по течению. Карты, где одни трины, чаще описывают не счастливую жизнь, а нереализованную.</p><h2>Совместимость знаков показывает, получится ли у пары</h2><p class="verdict"><b>Миф.</b> Таблицы «Овен + Весы = 60%» сравнивают одно Солнце с другим Солнцем и молчат обо всём остальном. В реальной синастрии смотрят Луну к Луне — совпадают ли способы чувствовать, Венеру и Марс — про притяжение, Меркурий — смогут ли двое вообще договориться словами. Процент из интернета не описывает ни одного из этих слоёв.</p><h2>У астрологии нет научных доказательств</h2><p class="verdict"><b>Правда.</b> Контролируемые проверки — вроде классического теста Шона Карлсона, где астрологи не смогли сопоставить карты с психологическими профилями лучше случайного — результата не дали. Это стоит знать. Астрология работает как язык описания: набор образов, на которые удобно вешать свои состояния и решения. Пользоваться этим языком можно, выдавать его за физику — нет.</p><h2>Луна двигает океаны, значит двигает и человека</h2><p class="verdict"><b>Миф.</b> Приливы возникают из-за разницы притяжения на разных краях планеты — эффект заметен на масштабе океана, но не на масштабе тела. Приливная сила Луны на человека слабее, чем от стоящего рядом здания. Если в полнолуние не спится, причина скорее в свете и в ожидании, а не в гравитации.</p><h2>У близнецов одинаковые карты, значит должна быть одна судьба</h2><p class="verdict"><b>Миф.</b> Карта описывает не сценарий, а набор склонностей — а распоряжаются ими по-разному даже дети одних родителей. К тому же разница в полчаса уже сдвигает Асцендент и границы домов, и акценты в двух картах расходятся. Совпадение исходных данных не делает совпадающей биографию.</p><h2>Возвращение Сатурна в 29 лет — это обязательный кризис</h2><p class="verdict"><b>Отчасти правда.</b> Сатурн обходит круг примерно за 29,5 лет и возвращается в ту же точку, где был при рождении. Период правда часто совпадает с пересмотром: работа, отношения, город. Но «кризис» — не приговор в расписании, а обычная ревизия в возрасте, когда уже накопился опыт, с которым можно сверяться. У кого-то она проходит буднично.</p></div></section>
+<section><div class="wrap"><div class="cta">
+  <h2>Разобрать свою карту</h2>
+  <p class="lead" style="margin-bottom:22px">Полный разбор — в Telegram: характер,
+     прогноз на каждый день, совместимость с партнёром, транзиты.</p>
+  <a class="btn" href="https://t.me/astro_razbot">Открыть бота</a>
+  <p class="note">Точнее всего — по дате, времени и городу рождения.
+     Но можно начать с одной даты: бот посчитает и по ней.</p>
+</div></div></section>
+
+<footer><div class="wrap">
+  <p>Астро Разбот — разбор натальной карты в Telegram.
+     <a href="https://t.me/astro_razbot">@astro_razbot</a></p>
+  <p style="margin-top:8px">Материалы носят развлекательный характер и не заменяют
+     консультацию врача, юриста или финансового советника.</p>
+</div></footer>
+</body>
+</html>
